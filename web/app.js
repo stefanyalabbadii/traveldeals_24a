@@ -28,7 +28,7 @@ app.post('/subscribe', async (req, res) => {
   // Create the "payload" for our message
   const message_data = JSON.stringify({
     email_address: email,
-    watch_regions: regions
+    watch_region: regions
   });
 
   // Create a data buffer that allows us to stream the message to the topic
